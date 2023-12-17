@@ -28,6 +28,7 @@ $(function()
 
 function Script2()
 {
+  var player = GetPlayer();
 src="https://code.jquery.com/jquery-3.7.0.js";
 
 var params;
