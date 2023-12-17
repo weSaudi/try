@@ -34,7 +34,7 @@ $(function()
 {
     $.getJSON( "one.json", function(data) {
         data[0]["one"]="ramy";
-        const myjsonserver = JSON.stringify(data);
+        JSON.stringify(data);
         console.log( data );
         console.log( myjsonserver );
       })
