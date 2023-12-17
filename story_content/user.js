@@ -36,7 +36,6 @@ $(function()
         data[0]["one"]="ramy";
         JSON.stringify(data);
         console.log( data );
-        console.log( myjsonserver );
       })
 })
 
