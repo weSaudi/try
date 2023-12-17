@@ -1,8 +1,7 @@
 <?php
-    if (!isset($_POST['params']) && !empty($_POST['params'])) {
-        $params = $_POST['params'];
-
-        $jsonObject = json_encode($params);
-        file_put_contents('userdata.json', $jsonObject);
-    }
-?>
+  header('Content-Type: text/plain');
+  $test = utf8_encode($_POST['test']); // Don't forget the encoding
+  $data = json_decode($test);
+  echo $data->test;
+  exit();
+ ?>
