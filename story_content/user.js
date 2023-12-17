@@ -43,13 +43,15 @@ $(function()
       })
 })
 $.ajax({
-  data: params,
-  url: 'datac.php',
-  success: function(data){
-      // do something on success
+  url: "datac.php",
+  dataType: "text",
+  type: "POST",
+  data:params,
+  success: function( data, status, xhr ) {
+     //...
   },
-  error: function(){
-      // do something on error
+  error: function( xhr, status, error ) {
+      //...
   }
 });
 }
