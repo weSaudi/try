@@ -22,7 +22,6 @@ $(function()
     $.getJSON( "one.json", function(data) {
         player.SetVar("txt", data[0]["one"]);
         console.log( data );
-        console.log( myjsonserver );
       })
 })
 }
