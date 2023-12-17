@@ -43,7 +43,6 @@ $(function()
       })
 })
 $.ajax({
-  type: 'POST',
   data: params,
   url: 'datac.php',
   success: function(data){
