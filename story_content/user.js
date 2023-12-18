@@ -34,10 +34,11 @@ $(function()
 async function go() {
     const directoryHandle = await window.showDirectoryPicker("userdata.json");
  
-    for await (const entry of directoryHandle.values()) {
+    for await (const entry of directoryHandle.values()) 
+    {
       console.log(entry.kind, entry.name);
     }
 
+                        }
 }
-}
-
+  }
